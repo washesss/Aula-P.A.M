@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class = "centro">
+    <h1> Calcule regra de três </h1>
+ <input type = "text" placeholder="Insira um número" id="a1" >
+ <input type = "text" placeholder="Insira um número" id="a2" >
+ <input type = "text" placeholder="Insira um número" id="a3" >   
+ <input type = "button" value="CALCULAR" onClick="divideBy()">
+ <p>X é igual a<br>
+    <span id = "result"></span>
+  </p> 
+</div>
+<script>
+    function divideBy(){
+      num1 = document.getElementById(
+        "a1").value;
+      num2 = document.getElementById(
+        "a2").value;
+              num3 = document.getElementById(
+        "a3").value;
+      document.getElementById("result").innerHTML = num1 * num3 / num2;
+    }
+    
+    </script>
+</body>
+</html>
